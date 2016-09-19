@@ -195,11 +195,11 @@ export class Nav extends React.Component<INavProps, INavState> implements INav {
     ev.stopPropagation();
   }
 
-  private _onNavLinkClicked(link: INavLink, ev: React.MouseEvent): void {
-    this._selectedKey = link.key;
+  private _onNavLinkClicked(ev?: React.MouseEvent, item?: INavLink): void {
+    this._selectedKey = item.key;
 
-    if (link.onClick) {
-      link.onClick();
+    if (item.onClick) {
+      item.onClick();
     }
   }
 }
