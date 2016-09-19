@@ -263,7 +263,7 @@ export const AppState: IAppState = {
           url: '#/examples/toggle'
         }
       ],
-          name: 'Basic components'
+      name: 'Basic components'
     },
     {
       links: [
