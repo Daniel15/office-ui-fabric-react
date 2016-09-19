@@ -199,7 +199,7 @@ export class Nav extends React.Component<INavProps, INavState> implements INav {
     this._selectedKey = item.key;
 
     if (item.onClick) {
-      item.onClick();
+      item.onClick(ev);
     }
   }
 }
